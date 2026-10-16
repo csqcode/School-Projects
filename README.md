@@ -2,7 +2,7 @@
 Coding projects that I completed in accordance with some of my courses at LSU.
 
 ## Courses Covered
-- CSC 3102
+- CSC 3102 - Advanced Data Structures and Algorithm Analysis
 
 ## Project Descriptions
 |Name|Course| Description |
