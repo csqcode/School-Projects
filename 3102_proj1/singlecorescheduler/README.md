@@ -5,7 +5,7 @@ This project schedules simulated CPU jobs on a single-core processor. It functio
 This program takes three arguments: # of CPU cycles (int), -f/-r (file/random), and a third argument depending on chosen mode
 
 Running with a file:
-- Ensure the file is located in the same folder as the singlecorescheduler package
+- Ensure the file is located in the same folder as the singlecorescheduler package (should not be inside singlecorescheduler)
 - Each line in the file should correlate to one object
 - Each line should have the following format: pid priority #_of_cycles arrival_cycle
 - Arguments will be: # of CPU cycles (int), -f, "fileName"
@@ -13,4 +13,5 @@ Running with a file:
 Running randomly:
 - Arguments will be: # of CPU cycles (int), -r, x (any double 0 < x <= 1)
 - x represents a double that will be compared against a random number generated each CPU cycle
-- If the random number is less than or equal to x, a new process will be added to the queue. 
+- If the random number is less than or equal to x, a new process will be added to the queue.
+- Object properties will be filled out with random values before being added to the queue.
