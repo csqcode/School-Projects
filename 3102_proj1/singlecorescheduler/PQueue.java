@@ -61,7 +61,6 @@ public class PQueue<E extends Comparable<E>> implements PQueueAPI<E>
     */
    public PQueue()
    {
-      //implement this method
       tree = new ArrayList<>();
    }
    
@@ -70,7 +69,6 @@ public class PQueue<E extends Comparable<E>> implements PQueueAPI<E>
     */
    public PQueue(PQueue pQ)
    {
-      //implement this method	   
       this.tree = pQ.tree;
    }
    
@@ -86,7 +84,6 @@ public class PQueue<E extends Comparable<E>> implements PQueueAPI<E>
 
    public boolean isEmpty()
    {
-      //implement this method
       if(tree.isEmpty())
       return true;
       
@@ -95,16 +92,13 @@ public class PQueue<E extends Comparable<E>> implements PQueueAPI<E>
 
    public void add(E obj)
    {
-      //implement this method
       tree.add(obj);
       this.heapifyUp(tree.size()-1);
    }
 
    public E remove() throws PQueueException
    {
-      //Swaps root with last leaf, removes value, and sorts
-      //implement this method
-      
+      //Swaps root with last leaf, removes value, and sorts      
       if(!tree.isEmpty())
       {
       Collections.swap(tree,0,tree.size()-1);
@@ -116,7 +110,6 @@ public class PQueue<E extends Comparable<E>> implements PQueueAPI<E>
  
    public E peek() throws PQueueException
    {
-      //implement this method
       if(!tree.isEmpty())
         return tree.get(0);
 	  return null;
@@ -126,7 +119,6 @@ public class PQueue<E extends Comparable<E>> implements PQueueAPI<E>
    {
       if(!tree.isEmpty())
          return tree.size();
-      //implement this method
       return 0;
    }
    
@@ -137,7 +129,6 @@ public class PQueue<E extends Comparable<E>> implements PQueueAPI<E>
     */
    private void swap(int place, int parent)
    {
-      //implement this method
       Collections.swap(tree, place, parent);
    }
 
@@ -148,14 +139,9 @@ public class PQueue<E extends Comparable<E>> implements PQueueAPI<E>
      */
     private void heapifyUp(int index)
     {
-        //implement this method
         while (index != 0 && tree.size() > 1)
         {
             int parent = (index-1) / 2;
-            /**!SECTION
-             * tree.get(index) - PCB object
-             * object.getPriority() - get priority of PCB object
-             */
             int childPrior = ((PCB)(tree.get(index))).getPriority();
             int parentPrior = ((PCB)(tree.get(parent))).getPriority();
 
@@ -188,16 +174,11 @@ public class PQueue<E extends Comparable<E>> implements PQueueAPI<E>
      */   
     public void heapifyDown(int index)
     {
-
-        //implement this method
-
          
         while((2 * index) + 1 < tree.size() || (2 * index) + 2 < tree.size() && tree.size() > 1){
          int smallest;
         int smallestPriority;
         int smallestArrival;
-
-
 
         //Case1 - Two Children
          if(2 * index + 2 < tree.size())
