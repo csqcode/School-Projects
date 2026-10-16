@@ -51,8 +51,6 @@ public class SingleCoreScheduler
             System.out.println("The simulator runs in either random (-R or -r) or file (-F or -f) mode.");
             System.exit(1);
         }
-		//Complete the implementation of this method
-
         //Queue
         PQueue<PCB> rQueue = new PQueue<>();
 
@@ -223,7 +221,6 @@ public class SingleCoreScheduler
         double averageTurn = turnaround/totalProcesses;
         double averageWait = (double)wait/totalProcesses;
 
-            //Note: The directions want the average turnaround time, however the sample output has average throughput time
         System.out.println("The average number of process created per cycle is " + averageProcess + ".");
         System.out.println("The average turnaround time is " + averageTurn + ".");
         System.out.println("The average wait time per process is " + averageWait + "."); 
