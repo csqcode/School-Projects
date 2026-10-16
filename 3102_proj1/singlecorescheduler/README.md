@@ -9,7 +9,7 @@ Running with a file:
 - Each line in the file should correlate to one object
 - Each line should have the following format: pid priority #_of_cycles arrival_cycle
 - Arguments will be: # of CPU cycles (int), -f, "fileName"
-- A sample file (SimulatedJobs.txt) is included in this repo)
+- A sample file (SimulatedJobs.txt) is included in this repo
 
 Running randomly:
 - Arguments will be: # of CPU cycles (int), -r, x (any double 0 < x <= 1)
