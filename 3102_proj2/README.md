@@ -18,10 +18,7 @@ Order Codes:
 ## File Breakdown
 | File | Function |
 | --- | --- |
-| PCB.java | Creates the Process Control Block (PCB) class. This creates the objects that represent the individual jobs.|
-| PQueue.java | Creates the PQueue class, implementing a min-heap priority queue ADT. |
-| PQueueAPI.java | Specifies basic operations of a PQueue. |
-| PQueueException.java | Reports PQueue exception with a specified message. |
-| PQueueExceptionAPI.java | Specifies the toString method of the PQueueException. |
-| SingleCoreScheduler.java | Simulates the scheduler of a single-core CPU by implementing a priority queue. Contains the main method of the program. |
-| SimulatedJobs.txt | File containing 97 sample jobs to be used for running the program. |
+| AVLTree.java | Creates the AVLTree class.|
+| AVLTreeAPI.java | Contains the API and methods for the AVLTree class. |
+| Dendrologist.java | Main method of the program. Takes a file of strings and executes them on an AVL Tree |
+
